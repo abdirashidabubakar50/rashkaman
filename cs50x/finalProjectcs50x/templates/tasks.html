@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tasks
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-18">
+            <div class="card-shadow">
+                <div class="card-header">Everything's that needs to be done</div>
+                <div class="card-body">
+                    <form action="/addtask" method="POST">
+                        <div class="input-group mb-3">
+                            <div class="input-group mb-3">
+                                <form action="/tasks" method="POST">
+                                  <input  class="form-control" type="text" name="task" placeholder="Add todo.....">
+                                  <i class="bi bi-check-circle-fill"style="color:green" type="submit" value="Add"></i>
+                                </form>
+                              </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-18">
+            <div class="border-start border-5 border-primary mt-3 shadow">
+               <div class="card-shadow">
+                   <div class="card-bdoy">
+                      <table class="table table-stripped">
+                          <thead>
+                              <th>tasks</th>
+                              <th>date</th>
+                              <th></th>
+                              <th></th>
+                          </thead>
+                          <tbody>
+                              {% for tasks in tasks%}
+                              <tr>
+                                  <td>{{tasks.id}} | {{ tasks.task }}</td>
+                                  <td>{{ tasks.date}}</td>
+
+                                  <td><form action="/update/{{tasks.id}}" method="POST">
+                                    {% if tasks.completed %}
+                                      <span class="badge bg-success">complete</span>
+                                    {% else %}
+                                      <span class="badge bg-secondary">uncomplete</span>
+                                    {% endif %}
+                                      <a href="/update/{{tasks.id}}" name="update"><i class="bi bi-check-circle-fill"style="color:green">{%if tasks.completed%}{%endif%}</i></a>
+                                  </form></td>
+                                  <td> <a href="/delete/{{tasks.id}}"><i class="bi bi-trash"style="color:red;"></i></a></td>
+                              </tr>
+                             {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

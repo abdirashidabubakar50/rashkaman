@@ -1,0 +1,116 @@
+
+.border-bottom h5{
+    font-weight:400;
+    color:red;
+    margin-left:50px;
+    margin-top:30px;
+}
+.card-body{
+    margin-top:50px;
+}
+span{
+    font-weight:400;
+    font-size:20px;
+}
+.form-control-sm {
+    border-radius: 3px;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    width:80%;
+    padding:1px 8px;
+    height:25px;
+}
+.xform{
+    display:block;
+    width: 75%;
+    margin-top: 50px;
+}
+.h1{
+    width:100%;
+    clear:both;
+}
+.x1{
+    clear:both;
+}
+.x1 .x4 input[type="text"]{
+    width:40rem;
+    text-align:left;
+
+}
+.x1 .x4 input[type="text"]:hover{
+    border-color:blue;
+
+}
+.x2{
+    float: left;
+    min-width: 167px;
+    width: 16%;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+    color: #333;
+    vertical-align: middle;
+}
+.x3 span{
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight:500px;
+    margin-top: 30px;
+}
+.x3 label{
+    cursor:default;
+    font-weight:360;
+    line-height:16px;
+    margin-top:1.5rem;
+
+}
+.x4{
+    float: left;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+}
+.x6{
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid black;
+    font-size: 13px;
+    height: 25px;
+    padding:13px;
+    width:30%;
+}
+.x5{
+    padding-right:16px;
+}
+ input{
+    display:inline-block;
+}
+.x7 button{
+    width: 20%;
+    float:right;
+    margin-top:  5%;
+    margin-left: 50%;
+}
+.x8 label{
+    font-weight:390;
+    line-height:16px;
+    margin-top:1.5rem;
+    font-size: x-small;
+    margin-left:20px
+
+}
+ .h1 h6{
+    margin-left: 30px;
+    height:30px;
+    font-weight:bold;
+    font-weight: 300px;
+    display: table-cell;
+}
+.mt-4 input{
+    border-radius:3rem;
+    width:20%;
+    padding: 1.5em;
+
+}
